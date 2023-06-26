@@ -125,7 +125,7 @@ nav button:last-child{
     padding-bottom: 1px;
     z-index: 200px; 
     border: 1px solid #005AE2;
-    border-right: 0;
+    border-right: 20;
     border-radius: 30px;
     margin-left: -50px;
 }
@@ -527,6 +527,48 @@ form input::placeholder{
 
 }
 
+.faq {
+    padding-bottom: 70px;
+    align-items: center;
+ 
+   }
+   
+ .faq section details summary{
+     padding: 15px;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.158);
+     position: relative;
+     list-style: none;
+     cursor: pointer;
+    
+     
+ }
+ 
+ 
+ .faq section details p{
+     font-size: 12px;
+     padding: 10px;
+ 
+ }
+ 
+ .faq section details summary::after{
+     content:'+';
+     position: absolute;
+     top: 15px;
+     right: 10px;
+     width: 10px;
+     font-size: 25px;
+     
+ }
+ 
+ .faq section details[open] summary::after{
+     content:'-';
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     font-size: 30px;
+     transition: .2s linear;
+     
+ }
 
 .sec7 h1{
     font-weight: bold; font-size: 30px; 
